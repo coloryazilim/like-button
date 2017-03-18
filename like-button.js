@@ -26,7 +26,8 @@ class Button {
   like(_id) {
     const data = {
       userId: Meteor.userId(),
-      likedId: _id
+      createdAt: new Date(),
+      likedId: _id,
     };
 
     if (data.userId) {
