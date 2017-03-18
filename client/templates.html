@@ -1,0 +1,6 @@
+<template name="likeButton">
+  <span class="like-button-container">
+    <i class="fa {{# if isLike }}fa-thumbs-up{{ else }}fa-thumbs-o-up{{/if}}" aria-hidden="true"></i>
+    {{ likes.count }}
+  </span>
+</template>
